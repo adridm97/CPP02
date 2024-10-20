@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Fixed.cpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adrian <adrian@student.42.fr>              +#+  +:+       +#+        */
+/*   By: aduenas- <aduenas-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 09:00:37 by adrian            #+#    #+#             */
-/*   Updated: 2024/09/30 09:24:07 by adrian           ###   ########.fr       */
+/*   Updated: 2024/10/20 13:12:17 by aduenas-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ Fixed::Fixed() : _fixedPointValue(0)
 {
     std::cout << "Default constructor called" << std::endl;
 }
-Fixed::Fixed(const Fixed &fixed)
+Fixed::Fixed(const Fixed &fixed) // : _fixedPointValue(fixed._fixedPointValue)
 {
     std::cout << "Copy constructor called" << std::endl;
     *this = fixed;
